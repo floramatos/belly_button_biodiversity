@@ -103,10 +103,13 @@ function buildCharts(sample) {
     // Create the trace for the bar chart. 
     let barData = {
       x: top10.map(a => a.SAMPLE_VALUES),
-      y: stringID.map(i => "OTU " + i),
+      y: stringID.map(i => "OTU " + i + "  "),
       text: top10.map(a => a.OTU_LABELS),
       type: "bar",
-      orientation: "h"
+      orientation: "h",
+      marker: {
+        color: 'rgb(49,130,189)',
+        opacity: 0.7}
     };
 
     // Create the layout for the bar chart. 
@@ -115,7 +118,8 @@ function buildCharts(sample) {
       yaxis: {
         type: 'category'
         },
-      paper_bgcolor: "rgba(0,0,0,0)"
+      paper_bgcolor: "rgba(0,0,0,0)",
+      plot_bgcolor: "rgba(0,0,0,0)"
       };
 
     // Use Plotly to plot the data with the layout. 
@@ -140,7 +144,8 @@ function buildCharts(sample) {
         title: "OTU ID"
       },
       hovermode: "x",
-      paper_bgcolor: "rgba(0,0,0,0)"
+      paper_bgcolor: "rgba(0,0,0,0)",
+      plot_bgcolor: "rgba(0,0,0,0)"
     };
 
     // Use Plotly to plot the data with the layout.
@@ -158,11 +163,11 @@ function buildCharts(sample) {
         axis: { range: [0, 10] },
         bar: { color: "gray" },
         steps: [
-          { range: [0, 2], color: "linen" },
-          { range: [2, 4], color: "peachpuff" },
-          { range: [4, 6], color: "sandybrown" },
-          { range: [6, 8], color: "chocolate" },
-          { range: [8, 10], color: "sienna" },
+          { range: [0, 2], color: "rgba(255, 0, 0, 0.6)" },
+          { range: [2, 4], color: "rgba(255, 165, 0, 0.6)" },
+          { range: [4, 6], color: "rgba(255, 255, 0, 0.6)" },
+          { range: [6, 8], color: "rgba(144, 238, 144, 0.6)" },
+          { range: [8, 10], color: "rgba(154, 205, 50, 0.6)" },
         ],
       },
         
