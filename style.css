@@ -1,0 +1,17 @@
+.jumbotron {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1585057638670-98226d968ee5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFjdGVyaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60');
+    background-size: cover;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+.jumbo_text {
+    color: white;
+}
+
+body {
+    background-color: honeydew;
+  }
+
+  
+
