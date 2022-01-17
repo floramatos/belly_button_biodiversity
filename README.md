@@ -10,7 +10,8 @@ Javascript, CSS, HTML, Github Pages
 ## Results
 The HTML dashboard can be filtered by the volunteer’s ID and includes four parts.
 
-— Add jpg of the whole dashboard
+![Screen Shot 2022-01-16 at 6 46 25 PM](https://user-images.githubusercontent.com/89421440/149701663-4a89be34-bd90-4699-b08a-ac0f83418b07.png)
+
 
 The first part of the dashboard is the demographics panel. When a volunteer ID is chosen from the dropdown menu, that person's demographics information, such as location, sex, and age, is displayed.
 
